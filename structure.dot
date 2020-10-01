@@ -1,0 +1,25 @@
+digraph g {
+	mini_pik  [shape=rect label="МИНИ-ПИК.00.000\nПередвижнй испытательный комплекс"] 
+	chasis    [shape=rect align=left label="ПИК-Ш.01.000\nШасси"]
+	control   [shape=rect align=left label="ПИК-БУ.02.000\nПодсистема управления"]
+	vision    [shape=rect align=left label="ПИК-СТЗ.03.000\nПодсистема технического зрения"]
+	remote    [shape=rect align=left label="ПИК-ПДУ.04.000\nПодсистема дистанционного управления"]
+	power     [shape=rect align=left label="ПИК-АКБ.05.000\nПодсистема питания"]
+	signals   [shape=rect align=left label="ПИК-СОС.06.000\nПодсистема освещения и сигнализации"]
+	navigator [shape=rect align=left label="ПИК-БН.07.000\nПодсистема навигации"]
+	odometers [shape=rect align=left label="ПИК-ИН.08.000\nПодсистема подключения одометров"]
+	power_sup [shape=rect align=left label="ПИК-ЗУ.09.000\nЗарядное устройство"]
+	spare     [shape=rect align=left label="ПИК-ЗИП.10.000\nКомплект ЗИП;"]
+	docs      [shape=rect align=left label="ПИК-ЭД.11.000\nЭксплуатационная документация."]
+	mini_pik -> chasis
+	mini_pik -> control
+	mini_pik -> vision
+	mini_pik -> remote
+	mini_pik -> power
+	mini_pik -> signals
+	mini_pik -> navigator
+	mini_pik -> odometers
+	mini_pik -> power_sup
+	mini_pik -> spare
+	mini_pik -> docs
+}
